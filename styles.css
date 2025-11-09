@@ -33,3 +33,62 @@
 .bold {
   font-weight: var(--text-bold);
 }
+
+.icon {
+  width: 24px;
+  height: 24px;
+}
+
+.header {
+  background-color: var(--yellow-200);
+  font-size: var(--text-sm);
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing-xs) var(--spacing-md);
+}
+
+.menu {
+  display: flex;
+  gap: var(--spacing-lg);
+  list-style: none;
+}
+
+.menu a,
+.menu a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer {
+  background-color: var(--yellow-200);
+  font-size: var(--text-sm);
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: var(--spacing-md);
+}
+
+@media screen and (min-width: 1024px) {
+  .icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .header {
+    font-size: var(--text-md);
+  }
+
+  .menu {
+    gap: var(--spacing-xl);
+  }
+
+  .footer {
+    font-size: var(--text-md);
+    padding: var(--spacing-xl);
+  }
+}
