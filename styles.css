@@ -19,6 +19,8 @@
   --text-lg: 20px;
   --text-xl: 24px;
   --line-height: 1.5;
+
+  --border-radius: 8px;
 }
 
 * {
@@ -101,6 +103,10 @@ body {
   align-items: center;
 }
 
+.section * {
+  max-width: 1200px;
+}
+
 .hero {
   background-image: url("/assets/hero.jpg");
   background-color: var(--white);
@@ -114,9 +120,10 @@ body {
 
 .overlay {
   width: 100%;
+  max-width: none;
   height: 100%;
   background-color: black;
-  opacity: 50%;
+  opacity: 0.5;
   position: absolute;
   z-index: 1;
 }
@@ -139,7 +146,7 @@ body {
 .card {
   padding: var(--spacing-md) var(--spacing-lg);
   box-shadow: 0 3px 4px 2px #00000025;
-  border-radius: 8px;
+  border-radius: var(--border-radius);
   display: flex;
   flex-direction: column;
   gap: var(--spacing-md);
@@ -177,9 +184,9 @@ body {
 }
 
 .button {
-  border-radius: 8px;
-  background-color: var(--black);
+  border-radius: var(--border-radius);
   border: none;
+  background-color: var(--black);
   color: var(--yellow-200);
   font-size: var(--text-lg);
   width: fit-content;
@@ -187,6 +194,11 @@ body {
   box-shadow: 0 3px 4px 2px #00000025;
   cursor: pointer;
   align-self: center;
+}
+
+.button:hover {
+  opacity: 0.85;
+  transition: opacity 0.2s ease;
 }
 
 .footer {
@@ -228,7 +240,7 @@ body {
   }
 
   .card {
-    max-width: 400px;
+    max-width: 350px;
   }
 
   .footer {
