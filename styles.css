@@ -1,0 +1,35 @@
+:root {
+  --yellow-100: #fff399;
+  --yellow-200: #ffe100;
+  --white: #fffff4;
+  --black: #333333;
+
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+
+  --font-family: "Inter", sans-serif;
+  --text-regular: 400;
+  --text-bold: 600;
+  --text-xs: 10px;
+  --text-sm: 12px;
+  --text-md: 16px;
+  --text-lg: 20px;
+  --text-xl: 24px;
+
+  font-family: var(--font-family);
+  font-weight: var(--text-regular);
+  color: var(--black);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.bold {
+  font-weight: var(--text-bold);
+}
