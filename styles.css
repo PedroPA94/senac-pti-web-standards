@@ -47,6 +47,10 @@ body {
   background-color: var(--yellow-100);
 }
 
+.bg-white {
+  background-color: var(--white);
+}
+
 .icon {
   width: 24px;
   height: 24px;
@@ -79,10 +83,12 @@ body {
   text-decoration: underline;
 }
 
-.card {
+.section {
   width: 100%;
   padding: var(--spacing-md);
   display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xl);
   justify-content: center;
   align-items: center;
 }
@@ -114,6 +120,31 @@ body {
   max-width: 90%;
 }
 
+.card-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xl);
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  padding: var(--spacing-md) var(--spacing-lg);
+  box-shadow: 0 3px 4px 2px #00000025;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+  width: 300px;
+}
+
+.card-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-md);
+}
+
 .footer {
   background-color: var(--yellow-200);
   font-size: var(--text-sm);
@@ -139,12 +170,17 @@ body {
     gap: var(--spacing-xl);
   }
 
-  .card {
+  .section {
     padding: var(--spacing-xl);
   }
 
   .hero-title p {
     font-size: var(--text-lg);
+  }
+
+  .card-container {
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 
   .footer {
